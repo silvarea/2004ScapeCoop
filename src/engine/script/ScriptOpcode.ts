@@ -420,6 +420,11 @@ export const enum ScriptOpcode {
     ATAN2_DEG, // custom
     ABS, // custom
 
+    // Group ops(4700 - 4799)
+    // Ahh hell maybe these are core lang ops
+    PUSH_VARG = 4700,
+    POP_VARG,
+
     // DB ops (7500-7599)
     DB_FIND_WITH_COUNT = 7500,
     DB_FINDNEXT,

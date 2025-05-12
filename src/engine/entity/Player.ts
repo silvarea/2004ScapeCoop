@@ -302,6 +302,8 @@ export default class Player extends PathingEntity {
     privateChat: ChatModePrivate = ChatModePrivate.ON;
     tradeDuel: ChatModeTradeDuel = ChatModeTradeDuel.ON;
 
+    groupId: number = -1;
+
     // input tracking
     account_id: number = -1;
     input: InputTracking;

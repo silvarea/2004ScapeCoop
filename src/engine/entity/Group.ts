@@ -11,4 +11,18 @@ export default class Group {
         this.groupName37 = groupName37;
         this.groupMembers37 = groupMembers37;
     }
+
+    createGroup() {
+
+    }
+
+    addPlayerToGroup() {
+
+    }
+
+    syncVarpsForGroup() {
+
+    }
+
+    
 }

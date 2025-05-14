@@ -34,7 +34,6 @@ export default class IfButtonHandler extends MessageHandler<IfButton> {
                 player.messageGame(`No trigger for [if_button,${com.comName}]`);
             }
         }
-
         return true;
     }
 }

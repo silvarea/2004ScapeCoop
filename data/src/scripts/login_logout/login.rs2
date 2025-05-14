@@ -82,6 +82,7 @@ if_settab(wornitems, ^tab_wornitems);
 
 if_settab(prayer, ^tab_prayer);
 if_settab(magic, ^tab_magic);
+if_settab(adv_party, ^tab_group);
 if_settab(friends, ^tab_friends);
 if_settab(ignore, ^tab_ignore);
 if_settab(logout, ^tab_logout);

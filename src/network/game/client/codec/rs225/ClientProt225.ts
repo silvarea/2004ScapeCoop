@@ -8,6 +8,8 @@ export default class ClientProt225 extends ClientProtBase {
 
     static readonly NO_TIMEOUT = new ClientProt225(6, 108, 0); // NXT naming
 
+    static readonly GROUP_CREATE = new ClientProt225(10, 12, 8);
+
     static readonly IDLE_TIMER = new ClientProt225(30, 70, 0);
 
     static readonly EVENT_TRACKING = new ClientProt225(34, 81, -2);

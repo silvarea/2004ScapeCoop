@@ -6,6 +6,7 @@ import CloseModalDecoder from '#/network/game/client/codec/rs225/CloseModalDecod
 import EventTrackingDecoder from '#/network/game/client/codec/rs225/EventTrackingDecoder.js';
 import FriendListAddDecoder from '#/network/game/client/codec/rs225/FriendListAddDecoder.js';
 import FriendListDelDecoder from '#/network/game/client/codec/rs225/FriendListDelDecoder.js';
+import GroupCreateDecoder from '#/network/game/client/codec/rs225/GroupCreateDecoder.js';
 import IdleTimerDecoder from '#/network/game/client/codec/rs225/IdleTimerDecoder.js';
 import IfButtonDecoder from '#/network/game/client/codec/rs225/IfButtonDecoder.js';
 import IfPlayerDesignDecoder from '#/network/game/client/codec/rs225/IfPlayerDesignDecoder.js';
@@ -42,6 +43,7 @@ import CloseModalHandler from '#/network/game/client/handler/CloseModalHandler.j
 import EventTrackingHandler from '#/network/game/client/handler/EventTrackingHandler.js';
 import FriendListAddHandler from '#/network/game/client/handler/FriendListAddHandler.js';
 import FriendListDelHandler from '#/network/game/client/handler/FriendListDelHandler.js';
+import GroupCreateHandler from '#/network/game/client/handler/GroupCreateHandler.js';
 import IdleTimerHandler from '#/network/game/client/handler/IdleTimerHandler.js';
 import IfButtonHandler from '#/network/game/client/handler/IfButtonHandler.js';
 import IfPlayerDesignHandler from '#/network/game/client/handler/IfPlayerDesignHandler.js';
@@ -139,5 +141,6 @@ export default class ClientProtRepository225 extends ClientProtRepository {
         this.bind(new ChatSetModeDecoder(), new ChatSetModeHandler());
         this.bind(new EventTrackingDecoder(), new EventTrackingHandler());
         this.bind(new ReportAbuseDecoder(), new ReportAbuseHandler());
+        this.bind(new GroupCreateDecoder(), new GroupCreateHandler());
     }
 }
